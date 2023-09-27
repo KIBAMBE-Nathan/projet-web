@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation de Billets d'Avion en Ligne</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre feuille de style CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Réservation de Billets d'Avion en Ligne</h1>
+        <form>
+            <div class="form-group">
+                <label for="nom">Nom complet :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telephone">Numéro de téléphone :</label>
+                <input type="tel" id="telephone" name="telephone">
+            </div>
+            <div class="form-group">
+                <label for="origine">Origine :</label>
+                <select id="origine" name="origine">
+                    <option value="nyc">New York City</option>
+                    <option value="lax">Los Angeles</option>
+                    <option value="chi">Chicago</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination :</label>
+                <select id="destination" name="destination">
+                    <option value="par">Paris</option>
+                    <option value="lon">Londres</option>
+                    <option value="tok">Tokyo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date_depart">Date de départ :</label>
+                <input type="date" id="date_depart" name="date_depart">
+            </div>
+            <div class="form-group">
+                <label for="date_retour">Date de retour :</label>
+                <input type="date" id="date_retour" name="date_retour">
+            </div>
+            <div class="form-group">
+                <label for="classe">Classe :</label>
+                <select id="classe" name="classe">
+                    <option value="economique">Économique</option>
+                    <option value="affaires">Affaires</option>
+                    <option value="premiere">Première</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="passagers">Nombre de passagers :</label>
+                <input type="number" id="passagers" name="passagers" min="1" max="10">
+            </div>
+            <div class="form-group">
+                <label for="commentaires">Commentaires :</label>
+                <textarea id="commentaires" name="commentaires" rows="4"></textarea>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-submit" type="submit">Réserver</button>
+                <button class="btn btn-reset" type="reset">Réinitialiser</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

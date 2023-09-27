@@ -1,0 +1,26 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 20 Sep 2023 11:01:42 at https://caacongo.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://caacongo.com/ -O1 "D:\Mes Projets\web\caa" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:03:10	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://caacongo.com/)
+11:04:12	Error: 	"Not Found" (404) at link https://caacongo.com/slide/css/example.css (from https://caacongo.com/)
+11:04:12	Error: 	"Not Found" (404) at link https://caacongo.com/slide/css/font-awesome.min.css (from https://caacongo.com/)
+11:04:12	Error: 	"Not Found" (404) at link https://caacongo.com/slide/img/pagination.png (from https://caacongo.com/)
+11:10:09	Error: 	"Not Found" (404) at link https://caacongo.com/conditions.html (from https://caacongo.com/)
+11:10:09	Error: 	"Not Found" (404) at link https://caacongo.com/css/fonts/icomoon.eot?5j2n32 (from https://caacongo.com/css/icomoon.css)
+11:10:09	Error: 	"Not Found" (404) at link https://caacongo.com/css/fonts/icomoon.ttf?5j2n32 (from https://caacongo.com/css/icomoon.css)
+11:10:09	Error: 	"Not Found" (404) at link https://caacongo.com/css/fonts/icomoon.woff?5j2n32 (from https://caacongo.com/css/icomoon.css)
+11:10:09	Error: 	"Not Found" (404) at link https://caacongo.com/css/fonts/icomoon.svg?5j2n32 (from https://caacongo.com/css/icomoon.css)
+11:10:09	Error: 	"Not Found" (404) at link https://caacongo.com/css/owl.video.play.png (from https://caacongo.com/css/owl.carousel.min.css)
+11:10:09	Warning: 	Retry after error -2 (Receive Time Out) at link https://caacongo.com/fonts/icomoon/icomoon.eot?srf3rx (from https://caacongo.com/css/style.css)
+11:10:12	Warning: 	Retry after error -2 (Receive Time Out) at link https://caacongo.com/images/bia.jpg (from https://caacongo.com/contacts.html)
+11:10:14	Warning: 	Retry after error -2 (Receive Time Out) at link https://caacongo.com/images/horizmap02.jpg (from https://caacongo.com/membres.html)
+11:10:15	Warning: 	Retry after error -2 (Receive Time Out) at link https://caacongo.com/images/room-1.jpg (from https://caacongo.com/membres.html)
+11:10:35	Warning: 	Retry after error -4 (No data (connection closed)) at link https://caacongo.com/hcontacts.html (from https://caacongo.com/membres.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 9 minutes 18 seconds : 105 links scanned, 89 files written (8966700 bytes overall) [8691404 bytes received at 15575 bytes/sec], 424886 bytes transferred using HTTP compression in 18 files, ratio 24%, 1.8 requests per connection
+(10 errors, 5 warnings, 0 messages)
