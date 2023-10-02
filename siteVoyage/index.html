@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--*cette basile link contient le liens qui permet de rendre accessible les icones font awesome dans mon site-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--*cette balise permet de relié mon fichier css avec mon fichier html-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Site de réservation en ligne</title>
+  </head>
+  <body>
+    <nav>
+        <div class="logo">Nath-air <img src="./assets/avion.png" alt="" class="img-logo"></div>
+        <ul class="liens">
+            <li class="lien"><a href="#">Accueil</a></li>
+            <li class="lien"><a href="./horaire.pdf">Horaires</a></li>
+            <li class="lien"><a href="#reserve">Destinations</a></li>
+            <li class="lien"><a href="#reserve">Réservation en ligne</a></li>
+            <li class="lien"><a href="#">Accès agents</a></li>
+            <li class="lien"><a href="#">Destinations populaires</a></li>
+        </ul>
+        <button class="btn">Contact</button>
+    </nav>
+    
+    <header class="contenue entete">
+      <h1 class="section_entete">Trouvez et réservez <br>
+        une expérience exceptionnelle</h1>
+      <img src="assets/header.jpg" alt="header" />
+    </header>
+
+    <section class="contenue reservation" id="reserve">
+      <div class="booking__nav">
+        <span>Classe économique</span>
+        <span>Classe Affaires</span>
+        <span>Première classe</span>
+      </div>
+      <form>
+        <div class="form__group">
+          <span><i class="ri-map-pin-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="text" />
+              <label>Emplacement</label>
+            </div>
+            <p>Où allez-vous?</p>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <span><i class="ri-user-3-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="number" />
+              <label>Nombres passagers</label>
+            </div>
+            <p>Ajouter des invités</p>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <span><i class="ri-calendar-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="text" />
+              <label>Aller</label>
+            </div>
+            <p>Ajouter une date</p>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <span><i class="ri-calendar-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="text" />
+              <label>Retour</label>
+            </div>
+            <p>Ajouter une date</p>
+          </div>
+        </div>
+        
+        <button class="btn"><i class="ri-search-line"></i></button>
+      </form>
+    </section>
+
+    <section class="contenue reservation">
+        <div class="container">
+            <h2 class="section_entete2">Réservation de Billets d'Avion en Ligne</h2>
+            <form>
+                <!-- <div class="form__group">
+                    <span><i class="ri-calendar-line"></i></span>
+                    <div class="input__content">
+                      <div class="input__group">
+                        <input type="text" />
+                        <label>Retour</label>
+                      </div>
+                      <p>Ajouter une date</p>
+                    </div>
+                </div> -->
+
+                <div class="form__group">
+                    <span><i class="ri-user-line"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                        <input type="text" required>
+                        <label>Nom complet </label>
+                        </div>
+                        <p>Ajouter une date</p>
+                    </div>
+                </div>
+                    
+                <div class="form__group">
+                    <span><i class="ri-mail-line"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                        <input type="email" required>
+                        <label>Adresse e-mail </label>
+                        </div>
+                        <p>Inserez votre adresse</p>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <span><i class="ri-phone-line"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                            <input type="tel" id="telephone" name="telephone">
+                            <label for="telephone">Num téléphone </label>
+                        </div>
+                        <p>Inserez votre numéro</p>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <span><i class="ri-building-2-fill"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                            <select class="origine" name="origine">
+                                <option value="nyc">New York City</option>
+                                <option value="lax">Los Angeles</option>
+                                <option value="chi">Chicago</option>
+                            </select>
+                        </div>
+                        <p>Inserez votre origine</p>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <span><i class="ri-building-2-fill"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                            <select class="origine" name="origine">
+                                <option value="par">Paris</option>
+                                <option value="lon">Londres</option>
+                                <option value="tok">Tokyo</option>
+                            </select>
+                        </div>
+                        <p>Inserez votre destination</p>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <span><i class="ri-calendar-line"></i></span>
+                    <div class="input__content">
+                      <div class="input__group">
+                        <input type="date" id="date_depart" name="date_depart">
+                      </div>
+                      <p>Ajouter une date de départ</p>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <span><i class="ri-calendar-line"></i></span>
+                    <div class="input__content">
+                      <div class="input__group">
+                        <input type="date" id="date_depart" name="date_depart">
+                      </div>
+                      <p>Ajouter une date de rétourt</p>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <span><i class="ri-building-2-fill"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                            <select class="origine" name="origine">
+                                <option value="economique">Économique</option>
+                                <option value="affaires">Affaires</option>
+                                <option value="premiere">Première</option>
+                            </select>
+                        </div>
+                        <p>Inserez votre classe</p>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <span><i class="ri-user-3-line"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                        <input type="number" id="passagers" name="passagers" min="1" max="10">
+                        <label>Passagers</label>
+                        </div>
+                        <p>Inserez les nombres</p>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <span><i class="ri-user-3-line"></i></span>
+                    <div class="input__content">
+                        <div class="input__group">
+                            <textarea id="commentaires" name="commentaires" rows="4"></textarea>
+                        </div>
+                        <p>Commentaires</p>
+                    </div>
+                </div>
+                <button class="btn btn-submit" type="submit">Réserver</button>
+                <button class="btn btn-reset" type="reset">Réinitialiser</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contenue plan__container">
+      <p class="subheader">SOUTIEN AUX DÉPLACEMENTS</p>
+      <h2 class="section__header">Planifiez votre voyage en toute confiance</h2>
+      <p class="description">
+        Trouvez de l’aide pour vos réservations et vos projets de voyage, et voyez à quoi vous attendre tout au long de votre voyage.
+      </p>
+      <div class="plan__grid">
+        <div class="plan__content">
+          <span class="number">01</span>
+          <h4>Conditions de voyage pour Dubaï</h4>
+          <p>
+            Restez informé et préparé pour votre voyage à Dubaï avec essentiel les exigences de voyage, assurant une expérience fluide et sans tracas dans Cette ville vibrante et captivante.
+          </p>
+          <span class="number">02</span>
+          <h4>Exigences de voyage par destination</h4>
+          <p>
+            Restez informé et planifiez votre voyage en toute simplicité, car nous vous fournissons des informations à jour des renseignements sur les exigences de voyage propres à vos souhaits; Destinations.
+          </p>
+          <span class="number">03</span>
+          <h4>Assurance voyage multirisque</h4>
+          <p>
+            Protection complète pour votre tranquillité d’esprit, couvrant une gamme de les risques potentiels liés aux voyages et les situations imprévues.
+          </p>
+        </div>
+        <div class="plan__image">
+          <img src="assets/plan-1.jpg" alt="plan" />
+          <img src="assets/plan-2.jpg" alt="plan" />
+          <img src="assets/plan-3.jpg" alt="plan" />
+        </div>
+      </div>
+    </section>
+
+    <section class="memories">
+      <div class="contenue memories__container">
+        <div class="memories__header">
+          <h2 class="section__header">
+            Voyagez pour créer des souvenirs partout dans le monde
+          </h2>
+          <button class="view__all">Voir tout</button>
+        </div>
+        <div class="memories__grid">
+          <div class="memories__card">
+            <span><i class="ri-calendar-2-line"></i></span>
+            <h4>Réservez et détendez-vous</h4>
+            <p>
+                Avec « Book and Relax », vous pouvez vous asseoir, vous détendre et profiter de la voyage pendant que nous nous occupons de tout le reste.
+            </p>
+          </div>
+          <div class="memories__card">
+            <span><i class="ri-shield-check-line"></i></span>
+            <h4>Liste de contrôle intelligente</h4>
+            <p>
+                Présentation de Smart Checklist avec nous, la solution innovante révolutionner la façon dont vous voyagez avec notre compagnie aérienne..
+            </p>
+          </div>
+          <div class="memories__card">
+            <span><i class="ri-bookmark-2-line"></i></span>
+            <h4>Économisez plus</h4>
+            <p>
+                Des prix réduits des billets aux promotions et offres exclusives, Nous accordons la priorité à l’abordabilité sans compromettre la qualité
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenue lounge__container">
+      <div class="lounge__image">
+        <img src="assets/lounge-1.jpg" alt="lounge" />
+        <img src="assets/lounge-2.jpg" alt="lounge" />
+      </div>
+      <div class="lounge__content">
+        <h2 class="section__header">Salon pour mineurs non accompagnés</h2>
+        <div class="lounge__grid">
+          <div class="lounge__details">
+            <h4>Faites l’expérience de la tranquillité</h4>
+            <p>
+                Nath-air offre une escapade tranquille, avec un confort confortable Assises, ambiance apaisante et service attentionné.
+            </p>
+          </div>
+          <div class="lounge__details">
+            <h4>Améliorez votre expérience</h4>
+            <p>Conçu pour les voyageurs exigeants, ce salon exclusif offre Commodités haut de gamme, assistance et espaces de travail privés.
+            </p>
+          </div>
+          <div class="lounge__details">
+            <h4>Un espace accueillant</h4>
+            <p>
+                Créant une atmosphère familiale, The Family Zone est le Havre de paix parfait pour les parents et les enfants.
+            </p>
+          </div>
+          <div class="lounge__details">
+            <h4>Un délice culinaire</h4>
+            <p>
+                Plongez dans un monde de saveurs, offrant à l’international cuisines, plats gastronomiques et boissons soigneusement sélectionnées.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="popular-destination">
+      <h2 class="section_entete">Déstinations populaires</h2>
+      <div class="content">
+          <!-- box -->
+          <div class="box">
+              <img src="images/paris.jpg" alt="">
+              <div class="content">
+                  <div>
+                      <h4>Paris</h4>
+                      <p>Découvrez la magie de Paris avec nos offres exclusives de réservation en ligne.</p>
+                      <br>
+                      <a href="#">Lire Plus</a>
+                  </div>
+              </div>
+          </div>
+          <!-- box -->
+          <!-- box -->
+          <div class="box">
+              <img src="images/moscou.jpg" alt="">
+              <div class="content">
+                  <div>
+                      <h4>Moscou</h4>
+                      <p>Planifiez votre séjour à Moscou en un clic grâce à notre plateforme de réservation intuitive.</p>
+                      <br>
+                      <a href="#">Lire Plus</a>
+                  </div>
+              </div>
+          </div>
+          <!-- box -->
+          <!-- box -->
+          <div class="box">
+              <img src="images/miami.jpg" alt="">
+              <div class="content">
+                  <div>
+                      <h4>Miami</h4>
+                      <p>Plongez dans le soleil de Miami en réservant votre hébergement en ligne avec facilité.</p>
+                      <br>
+                      <a href="#">Lire Plus</a>
+                  </div>
+              </div>
+          </div>
+          <!-- box -->
+           <!-- box -->
+           <div class="box">
+              <img src="images/los-angeles.jpg" alt="">
+              <div class="content">
+                  <div>
+                      <h4>Los-Angeles</h4>
+                      <p>Réservez votre escapade à Los Angeles dès maintenant et vivez le rêve californien.</p>
+                      <br>
+                      <a href="#">Lire Plus</a>
+                  </div>
+              </div>
+          </div>
+          <!-- box -->
+           <!-- box -->
+           <div class="box">
+              <img src="images/rome.jpg" alt="">
+              <div class="content">
+                  <div>
+                      <h4>Rome</h4>
+                      <p>Explorez la beauté éternelle de Rome en réservant votre hébergement sans tracas ici.</p>
+                      <br>
+                      <a href="#">Lire Plus</a>
+                  </div>
+              </div>
+          </div>
+          <!-- box -->
+           <!-- box -->
+           <div class="box">
+              <img src="images/tokio.jpg" alt="">
+              <div class="content">
+                  <div>
+                      <h4>Tokio</h4>
+                      <p>Rendez votre voyage à Tokyo inoubliable en réservant votre logement en avance sur notre site.</p>
+                      <br>
+                      <a href="#">Lire Plus</a>
+                  </div>
+              </div>
+          </div>
+          <!-- box -->
+      </div>
+  </section>
+
+
+    <section class="contenue travellers__container">
+      <h2 class="section__header">Meilleurs voyageurs du mois</h2>
+      <div class="travellers__grid">
+        <div class="travellers__card">
+          <img src="assets/traveller-1.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="assets/nathan.jpg" alt="client" />
+            <h4>Nathan KIBAMBE</h4>
+            <p>Dubaï</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <img src="assets/traveller-2.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="assets/david.jpeg" alt="client" />
+            <h4>David KASINDI</h4>
+            <p>Paris</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <img src="assets/traveller-3.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="assets/daniel.jpg" alt="client" />
+            <h4>Daniel DABA</h4>
+            <p>Singapore</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <img src="assets/traveller-4.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="assets/milka.jpg" alt="client" />
+            <h4>Milka NDIVITO</h4>
+            <p>Malaysie</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <h1 class="title">Contact</h1>
+      <form action="">
+          <div class="left-right">
+              <div class="left">
+                  <label>Nom Complet</label>
+                  <input type="text">
+                  <label>Objet</label>
+                  <input type="text">
+                  <label>Email</label>
+                  <input type="text">
+                  <label>Message</label>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+              <div class="right">
+                  <label>Numéro</label>
+                  <input type="text">
+                  <label>Date</label>
+                  <input type="text">
+                  <label>Autres Details</label>
+                  <input type="text">
+                  <label>Adresse</label>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1647531560805!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+          </div>
+          <button>Envoyer</button>
+      </form>
+  </section>
+
+
+    <section class="subscribe">
+      <div class="contenue subscribe__container">
+        <h2 class="section__header">Abonnez-vous à la newsletter et recevez les dernières nouvelles</h2>
+        <form class="subscribe__form">
+          <input type="text" placeholder="Entrez votre email ici" />
+          <button class="btn"> S’inscrire</button>
+        </form>
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+      <div class="contenue footer__container">
+        <div class="footer__col">
+          <h3>Nath-air</h3>
+          <p>
+            Là où l’excellence prend son envol. Avec un engagement fort envers le client satisfaction et passion pour le transport aérien, Flivan Airlines offre Un service exceptionnel et des voyages sans faille.
+          </p>
+          <p>
+            Des sourires amicaux aux avions à la fine pointe de la technologie, nous connectons le monde, assurant des expériences sûres, confortables et inoubliables.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>INFORMATION</h4>
+            <p>Horaires</p>
+            <p>Destinations</p>
+            <p>Réservation en ligne</p>
+            <p>Accès agents</p>
+            <p>Programme de fidelité</p>
+        </div>
+        <div class="footer__col">
+          <h4>CONTACT</h4>
+          <p>Soutien</p>
+          <p>Médias</p>
+          <p>Social</p>
+        </div>
+      </div>
+      <div class="contenue footer__bar">
+        <p>Copyright © 2023 Nath Codeur. Tout droit réserver.</p>
+        <div class="socials">
+          <span><i class="ri-facebook-fill"></i></span>
+          <span><i class="ri-twitter-fill"></i></span>
+          <span><i class="ri-instagram-line"></i></span>
+          <span><i class="ri-youtube-fill"></i></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
